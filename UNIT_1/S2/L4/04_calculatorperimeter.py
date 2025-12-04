@@ -18,5 +18,14 @@ if input_figure == "quadrato":
 
 
 # Funzione per calcolare il perimetro del cerchio
+elif input_figure == "cerchio":
+    raggio = float(input("Inserisci il raggio del cerchio: "))
+    perimetro_cerchio = 2 * math.pi * raggio
+    print(f"La circonferenza del cerchio è: {perimetro_cerchio}")
 
 # Funzione per calcolare il perimetro del rettangolo
+elif input_figure == "rettangolo":
+    base = float(input("Inserisci la lunghezza della base del rettangolo: "))
+    altezza = float(input("Inserisci l'altezza del rettangolo: "))
+    perimetro_rettangolo = 2 * (base + altezza) # ho corretto la formula del perimetro del rettangolo il prodotto lo eseguo dopo
+    print(f"Il perimetro del rettangolo è: {perimetro_rettangolo}")
