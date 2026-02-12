@@ -1,0 +1,222 @@
+[
+  {
+    "q": "Qual è la funzione principale di Splunk?",
+    "options": [
+      "Crittografare il traffico di rete",
+      "Cercare, monitorare e analizzare dati delle macchine",
+      "Bloccare automaticamente gli attacchi",
+      "Gestire database relazionali"
+    ],
+    "answer": 1,
+    "rationale": "Splunk è descritto come una piattaforma per cercare, monitorare e analizzare dati generati dalle macchine tramite interfaccia web."
+  },
+  {
+    "q": "Cosa rappresenta il campo Host in Splunk?",
+    "options": [
+      "Il formato del log",
+      "Il nome del dispositivo che genera i dati",
+      "Il percorso del file di log",
+      "Il tipo di indice utilizzato"
+    ],
+    "answer": 1,
+    "rationale": "L’host identifica il sistema o dispositivo da cui provengono i dati."
+  },
+  {
+    "q": "Cosa indica il campo Source?",
+    "options": [
+      "Il nome dell’indice",
+      "Il percorso o file specifico da cui sono raccolti i dati",
+      "Il tipo di attacco rilevato",
+      "Il timestamp dell’evento"
+    ],
+    "answer": 1,
+    "rationale": "La source rappresenta il percorso o file specifico da cui Splunk raccoglie i dati."
+  },
+  {
+    "q": "Qual è il ruolo del Sourcetype?",
+    "options": [
+      "Determinare la porta di rete",
+      "Definire il formato dei dati e come interpretarli",
+      "Stabilire il firewall",
+      "Creare utenti in Splunk"
+    ],
+    "answer": 1,
+    "rationale": "Il sourcetype classifica il formato dei dati e dice a Splunk come interpretarli durante parsing e indicizzazione."
+  },
+  {
+    "q": "Cos’è il parsing in Splunk?",
+    "options": [
+      "La cifratura dei log",
+      "Il backup dei dati",
+      "L’analisi dei dati grezzi per estrarre campi strutturati",
+      "La compressione dei file"
+    ],
+    "answer": 2,
+    "rationale": "Il parsing è il processo di analisi dei dati grezzi per estrarre informazioni strutturate come campi."
+  },
+  {
+    "q": "Cosa avviene durante la separazione degli eventi?",
+    "options": [
+      "I log vengono cifrati",
+      "Il flusso dati viene diviso in eventi individuali",
+      "I dati vengono cancellati",
+      "Viene creato un nuovo index"
+    ],
+    "answer": 1,
+    "rationale": "Splunk analizza il flusso e lo divide in eventi singoli, ad esempio una riga per evento nei log Apache."
+  },
+  {
+    "q": "Qual è lo scopo della field extraction?",
+    "options": [
+      "Eliminare eventi duplicati",
+      "Estrarre campi significativi dai log",
+      "Modificare il firewall",
+      "Cambiare l’host"
+    ],
+    "answer": 1,
+    "rationale": "La creazione di campi permette di identificare elementi specifici come timestamp, IP e status code."
+  },
+  {
+    "q": "Cosa rappresenta un index in Splunk?",
+    "options": [
+      "Un plugin di sicurezza",
+      "Un’area strutturata dove i dati vengono archiviati",
+      "Un tipo di query",
+      "Un agente remoto"
+    ],
+    "answer": 1,
+    "rationale": "L’index è l’area di archiviazione strutturata dove Splunk organizza e memorizza i dati indicizzati."
+  },
+  {
+    "q": "Perché è importante configurare correttamente il sourcetype?",
+    "options": [
+      "Per aumentare la RAM",
+      "Per garantire indicizzazione e ricerche accurate",
+      "Per installare Splunk",
+      "Per modificare l’IP del server"
+    ],
+    "answer": 1,
+    "rationale": "Un sourcetype corretto garantisce parsing adeguato e indicizzazione accurata, migliorando le ricerche."
+  },
+  {
+    "q": "Quale comando consente di contare eventi raggruppandoli per un campo?",
+    "options": [
+      "search",
+      "table",
+      "stats count by",
+      "rename"
+    ],
+    "answer": 2,
+    "rationale": "Il comando stats count by permette di contare eventi raggruppati per uno specifico campo."
+  },
+  {
+    "q": "Quale comando crea un grafico temporale in Splunk?",
+    "options": [
+      "timechart",
+      "eval",
+      "search",
+      "rename"
+    ],
+    "answer": 0,
+    "rationale": "Il comando timechart genera grafici temporali aggregando eventi nel tempo."
+  },
+  {
+    "q": "A cosa serve il comando eval?",
+    "options": [
+      "Filtrare per host",
+      "Creare o trasformare campi",
+      "Configurare l’indice",
+      "Installare il forwarder"
+    ],
+    "answer": 1,
+    "rationale": "Eval viene utilizzato per creare o trasformare campi, ad esempio calcolando nuovi valori."
+  },
+  {
+    "q": "Cosa fa il comando table?",
+    "options": [
+      "Elimina campi",
+      "Visualizza dati in formato tabellare",
+      "Crea un nuovo sourcetype",
+      "Configura il firewall"
+    ],
+    "answer": 1,
+    "rationale": "Table mostra i campi selezionati in formato tabellare."
+  },
+  {
+    "q": "Qual è la funzione del comando search?",
+    "options": [
+      "Filtrare risultati in base a condizioni",
+      "Creare dashboard",
+      "Gestire utenti",
+      "Impostare la porta di ricezione"
+    ],
+    "answer": 0,
+    "rationale": "Search filtra i risultati in base a condizioni specifiche come status=404."
+  },
+  {
+    "q": "Cosa permette di fare earliest=-7d@d latest=now in una query?",
+    "options": [
+      "Cambiare l’indice",
+      "Filtrare per intervallo temporale",
+      "Creare un campo",
+      "Rinominare un host"
+    ],
+    "answer": 1,
+    "rationale": "Questi parametri restringono la ricerca a un intervallo temporale specifico, ad esempio l’ultima settimana."
+  },
+  {
+    "q": "Qual è il ruolo dello Splunk Universal Forwarder?",
+    "options": [
+      "Visualizzare dashboard",
+      "Inviare log da una macchina a un server Splunk",
+      "Creare indici",
+      "Generare report PDF"
+    ],
+    "answer": 1,
+    "rationale": "Il Forwarder è un agente che invia i log da una macchina host al server Splunk centrale."
+  },
+  {
+    "q": "Perché è necessario attivare una porta di ricezione sul server Splunk?",
+    "options": [
+      "Per consentire la ricezione dei dati dai forwarder",
+      "Per cifrare i log",
+      "Per creare utenti",
+      "Per eseguire query"
+    ],
+    "answer": 0,
+    "rationale": "Il server deve avere una porta attiva per ricevere i dati inviati dai forwarder."
+  },
+  {
+    "q": "Quale tipo di dati contiene il file access.log nel tutorialdata?",
+    "options": [
+      "Dati di sicurezza Windows",
+      "Dati di accesso al server web",
+      "Dati di vendita",
+      "Configurazioni firewall"
+    ],
+    "answer": 1,
+    "rationale": "access.log contiene dati di accesso al server web utili per analisi del traffico."
+  },
+  {
+    "q": "Cosa contiene il file vendor_sales.log nel tutorialdata?",
+    "options": [
+      "Eventi di sicurezza",
+      "Dati di accesso HTTP",
+      "Informazioni sulle vendite",
+      "Log di sistema Linux"
+    ],
+    "answer": 2,
+    "rationale": "vendor_sales.log contiene informazioni sulle vendite per analisi commerciali."
+  },
+  {
+    "q": "Cosa permette di fare stats count by source?",
+    "options": [
+      "Eliminare eventi duplicati",
+      "Contare eventi per ciascuna source",
+      "Creare un nuovo host",
+      "Modificare il sourcetype"
+    ],
+    "answer": 1,
+    "rationale": "La query stats count by source conta il numero di eventi raggruppati per ogni source."
+  }
+]

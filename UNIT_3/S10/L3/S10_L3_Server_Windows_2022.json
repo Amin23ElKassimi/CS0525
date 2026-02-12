@@ -1,0 +1,167 @@
+[
+  {
+    "q": "Qual è uno degli obiettivi principali di Windows Server in ambito aziendale?",
+    "options": [
+      "Gestire centralmente utenti e risorse di rete",
+      "Sostituire completamente i client locali",
+      "Eliminare la necessità di backup",
+      "Funzionare solo in ambienti cloud"
+    ],
+    "answer": 0,
+    "rationale": "Windows Server è progettato per gestire centralmente utenti, gruppi e risorse di rete in un'infrastruttura aziendale."
+  },
+  {
+    "q": "Cos'è Active Directory?",
+    "options": [
+      "Un antivirus integrato in Windows",
+      "Un servizio di directory che gestisce utenti e risorse",
+      "Un sistema di backup automatico",
+      "Un protocollo di rete per lo streaming"
+    ],
+    "answer": 1,
+    "rationale": "Active Directory è un servizio di directory sviluppato da Microsoft che organizza utenti, computer e gruppi fornendo autenticazione e autorizzazione centralizzate."
+  },
+  {
+    "q": "Qual è la funzione principale di un dominio in Windows Server?",
+    "options": [
+      "Gestire solo le stampanti di rete",
+      "Gestire autenticazione, policy e replicazione",
+      "Installare automaticamente software su tutti i PC",
+      "Fornire accesso diretto a Internet"
+    ],
+    "answer": 1,
+    "rationale": "Il dominio gestisce autenticazione degli utenti, applicazione delle policy di sicurezza e replicazione tra controller di dominio."
+  },
+  {
+    "q": "Cos'è una foresta in Windows Server?",
+    "options": [
+      "Un insieme di cartelle condivise",
+      "Un gruppo di utenti con privilegi elevati",
+      "Un insieme di uno o più domini con struttura logica comune",
+      "Un server dedicato esclusivamente al DNS"
+    ],
+    "answer": 2,
+    "rationale": "Una foresta è un insieme di uno o più domini che condividono uno schema e un catalogo globale."
+  },
+  {
+    "q": "Perché si utilizzano i gruppi in Windows Server?",
+    "options": [
+      "Per aumentare la velocità della rete",
+      "Per assegnare permessi a singoli utenti in modo casuale",
+      "Per semplificare la gestione delle autorizzazioni",
+      "Per evitare l'uso delle policy"
+    ],
+    "answer": 2,
+    "rationale": "I gruppi permettono di assegnare autorizzazioni in modo centralizzato e coerente invece che ai singoli utenti."
+  },
+  {
+    "q": "Qual è la differenza principale tra Gruppi di Sicurezza e Gruppi di Distribuzione?",
+    "options": [
+      "I gruppi di sicurezza gestiscono permessi, quelli di distribuzione gestiscono email",
+      "I gruppi di sicurezza servono solo per backup",
+      "I gruppi di distribuzione gestiscono autenticazione",
+      "Non esiste alcuna differenza"
+    ],
+    "answer": 0,
+    "rationale": "I gruppi di sicurezza sono usati per autorizzazioni sulle risorse, mentre quelli di distribuzione sono usati per mailing list."
+  },
+  {
+    "q": "Qual è lo scopo principale delle Group Policy (GPO)?",
+    "options": [
+      "Bloccare completamente l'accesso al server",
+      "Standardizzare e automatizzare configurazioni e sicurezza",
+      "Sostituire Active Directory",
+      "Configurare solo la rete Wi-Fi"
+    ],
+    "answer": 1,
+    "rationale": "Le GPO permettono di applicare configurazioni e criteri di sicurezza in modo uniforme su utenti e computer."
+  },
+  {
+    "q": "Qual è la funzione dei permessi di Sharing?",
+    "options": [
+      "Controllare l'accesso locale ai file",
+      "Gestire solo le password degli utenti",
+      "Controllare l'accesso alle cartelle tramite rete",
+      "Configurare il firewall del server"
+    ],
+    "answer": 2,
+    "rationale": "I permessi di condivisione controllano l'accesso ai file quando vengono raggiunti tramite la rete."
+  },
+  {
+    "q": "Qual è la caratteristica principale dei permessi di Security (NTFS)?",
+    "options": [
+      "Sono meno granulari dei permessi di sharing",
+      "Controllano solo l'accesso remoto",
+      "Offrono controllo dettagliato su file e cartelle",
+      "Si applicano solo agli utenti guest"
+    ],
+    "answer": 2,
+    "rationale": "I permessi NTFS permettono un controllo granulare sia in accesso locale che remoto."
+  },
+  {
+    "q": "Cosa succede quando i permessi di Sharing e NTFS sono diversi?",
+    "options": [
+      "Prevale sempre il permesso di Sharing",
+      "Prevale sempre il permesso NTFS più restrittivo",
+      "Si sommano automaticamente",
+      "Il sistema ignora entrambi"
+    ],
+    "answer": 1,
+    "rationale": "L'accesso effettivo è determinato dal livello più restrittivo tra Sharing e NTFS."
+  },
+  {
+    "q": "Qual è il rischio nell'utilizzare il gruppo 'Everyone' nei permessi?",
+    "options": [
+      "Riduce le prestazioni del server",
+      "Può concedere accesso a utenti non autenticati",
+      "Impedisce la replicazione del dominio",
+      "Blocca la configurazione delle GPO"
+    ],
+    "answer": 1,
+    "rationale": "Il gruppo Everyone può includere anche utenti non autenticati, aumentando il rischio di accessi non autorizzati."
+  },
+  {
+    "q": "Perché il server viene configurato con un IP statico?",
+    "options": [
+      "Per migliorare la grafica del sistema",
+      "Perché deve avere un indirizzo stabile per i client",
+      "Per evitare l'uso del DNS",
+      "Per ridurre il consumo di RAM"
+    ],
+    "answer": 1,
+    "rationale": "Un server deve avere un IP fisso per garantire affidabilità nei servizi di rete e nel dominio."
+  },
+  {
+    "q": "Perché il client viene aggiunto al dominio?",
+    "options": [
+      "Per aumentare la velocità di Internet",
+      "Per ottenere autenticazione centralizzata",
+      "Per eliminare l'account Administrator",
+      "Per creare automaticamente nuove cartelle"
+    ],
+    "answer": 1,
+    "rationale": "L'aggiunta al dominio permette autenticazione e gestione centralizzata delle risorse."
+  },
+  {
+    "q": "Qual è uno dei benefici della centralizzazione tramite Active Directory?",
+    "options": [
+      "Eliminazione dei permessi NTFS",
+      "Maggiore sicurezza e gestione organizzata",
+      "Accesso illimitato per tutti gli utenti",
+      "Riduzione del numero di server necessari a zero"
+    ],
+    "answer": 1,
+    "rationale": "Active Directory migliora la sicurezza e semplifica la gestione centralizzata di utenti e risorse."
+  },
+  {
+    "q": "Dove si configurano le policy delle password in Windows Server?",
+    "options": [
+      "Nel Task Manager",
+      "In Group Policy Management sotto Account Policies",
+      "Nel BIOS del server",
+      "Nel pannello di controllo della rete"
+    ],
+    "answer": 1,
+    "rationale": "Le password policy si configurano tramite Group Policy Management seguendo il percorso fino a Account Policies e Password Policy."
+  }
+]

@@ -1,0 +1,387 @@
+[
+  {
+    "q": "Perché è importante studiare l'IAM nel contesto della sicurezza informatica?",
+    "options": [
+      "Per aumentare le prestazioni hardware",
+      "Per proteggere informazioni sensibili e garantire conformità normativa",
+      "Per sostituire i firewall aziendali",
+      "Per eliminare la necessità di backup"
+    ],
+    "answer": 1,
+    "rationale": "L'IAM protegge informazioni sensibili, garantisce accessi sicuri e aiuta a conformarsi alle normative, migliorando sicurezza ed efficienza operativa."
+  },
+  {
+    "q": "Qual è l'obiettivo principale dell'Identity and Access Management (IAM)?",
+    "options": [
+      "Aumentare la velocità dei database",
+      "Garantire che persone e dispositivi giusti accedano alle risorse giuste al momento giusto",
+      "Eliminare tutti gli account utente",
+      "Sostituire i sistemi RAID"
+    ],
+    "answer": 1,
+    "rationale": "L'obiettivo dell'IAM è assicurare accesso corretto alle risorse giuste, nel momento giusto e per motivi appropriati."
+  },
+  {
+    "q": "Quale tra i seguenti è un componente chiave dell'IAM?",
+    "options": [
+      "Provisioning e Deprovisioning",
+      "Formattazione dischi",
+      "Crittografia RAID",
+      "Bilanciamento di carico"
+    ],
+    "answer": 0,
+    "rationale": "Il provisioning e deprovisioning fanno parte della gestione delle identità digitali nell'IAM."
+  },
+  {
+    "q": "Qual è la differenza principale tra autenticazione e autorizzazione?",
+    "options": [
+      "Non esiste differenza",
+      "L'autenticazione verifica l'identità, l'autorizzazione determina cosa si può fare",
+      "L'autorizzazione verifica l'identità",
+      "Entrambe gestiscono solo password"
+    ],
+    "answer": 1,
+    "rationale": "L'autenticazione verifica chi sei, mentre l'autorizzazione determina i permessi dopo l'autenticazione."
+  },
+  {
+    "q": "Quale principio riduce il rischio di accessi non autorizzati nell'IAM?",
+    "options": [
+      "RAID 0",
+      "Least Privilege",
+      "Backup completo",
+      "XOR"
+    ],
+    "answer": 1,
+    "rationale": "Il principio del Least Privilege assegna solo i permessi strettamente necessari, riducendo il rischio di abusi."
+  },
+  {
+    "q": "Cosa significa IGA?",
+    "options": [
+      "Internal Governance Access",
+      "Identity Governance and Administration",
+      "Integrated Global Access",
+      "Internet Governance Authority"
+    ],
+    "answer": 1,
+    "rationale": "IGA sta per Identity Governance and Administration ed è una componente dell'IAM."
+  },
+  {
+    "q": "Qual è uno degli obiettivi principali dell'IGA?",
+    "options": [
+      "Aumentare lo spazio disco",
+      "Garantire conformità a normative e policy aziendali",
+      "Velocizzare il boot del sistema",
+      "Sostituire il PAM"
+    ],
+    "answer": 1,
+    "rationale": "L'IGA si concentra sulla gestione delle identità e sulla conformità alle normative e policy aziendali."
+  },
+  {
+    "q": "Cosa comporta il processo di deprovisioning nell'IGA?",
+    "options": [
+      "Creazione di nuovi utenti",
+      "Rimozione degli accessi quando un utente lascia l'organizzazione",
+      "Backup dei dati",
+      "Installazione di firewall"
+    ],
+    "answer": 1,
+    "rationale": "Il deprovisioning revoca identità e accessi quando non più necessari."
+  },
+  {
+    "q": "Cos'è la certificazione degli accessi nell'IGA?",
+    "options": [
+      "Creazione password casuali",
+      "Revisione periodica dei permessi utenti",
+      "Duplicazione dei dati",
+      "Configurazione RAID"
+    ],
+    "answer": 1,
+    "rationale": "La certificazione prevede verifiche periodiche per assicurare che gli utenti abbiano ancora bisogno dei permessi concessi."
+  },
+  {
+    "q": "Qual è il ruolo della reportistica nell'IGA?",
+    "options": [
+      "Monitorare e documentare attività di accesso",
+      "Velocizzare le query SQL",
+      "Ridurre spazio disco",
+      "Configurare NAS"
+    ],
+    "answer": 0,
+    "rationale": "La reportistica crea audit trail e report per garantire trasparenza e conformità."
+  },
+  {
+    "q": "Cosa significa PAM?",
+    "options": [
+      "Privileged Access Management",
+      "Protected Account Mechanism",
+      "Personal Access Model",
+      "Primary Authorization Module"
+    ],
+    "answer": 0,
+    "rationale": "PAM è l'acronimo di Privileged Access Management."
+  },
+  {
+    "q": "Qual è lo scopo principale del PAM?",
+    "options": [
+      "Gestire backup cloud",
+      "Controllare e monitorare accessi privilegiati",
+      "Velocizzare rete LAN",
+      "Sostituire IAM"
+    ],
+    "answer": 1,
+    "rationale": "Il PAM si concentra sulla gestione e controllo degli account con privilegi elevati."
+  },
+  {
+    "q": "Cosa indica il principio Just-in-Time nel PAM?",
+    "options": [
+      "Accesso permanente agli admin",
+      "Accesso privilegiato concesso solo quando necessario e per tempo limitato",
+      "Backup in tempo reale",
+      "Replica RAID continua"
+    ],
+    "answer": 1,
+    "rationale": "Il Just-in-Time concede accessi privilegiati solo temporaneamente e quando necessario."
+  },
+  {
+    "q": "Qual è la funzione del vault delle password nel PAM?",
+    "options": [
+      "Eliminare password",
+      "Archiviare in modo sicuro credenziali privilegiate",
+      "Creare file system",
+      "Configurare XOR"
+    ],
+    "answer": 1,
+    "rationale": "Il vault archivia in modo sicuro le credenziali privilegiate."
+  },
+  {
+    "q": "Cosa permette il session monitoring nel PAM?",
+    "options": [
+      "Formattare dischi",
+      "Monitorare in tempo reale le sessioni privilegiate",
+      "Aumentare RAM",
+      "Eseguire backup automatici"
+    ],
+    "answer": 1,
+    "rationale": "Il session monitoring controlla le sessioni privilegiate per rilevare attività sospette."
+  },
+  {
+    "q": "In Linux, cosa rappresenta l'UID?",
+    "options": [
+      "Un tipo di RAID",
+      "Un numero univoco che identifica un utente",
+      "Una chiave di cifratura",
+      "Un protocollo di rete"
+    ],
+    "answer": 1,
+    "rationale": "Linux identifica ogni utente tramite un numero univoco chiamato UID."
+  },
+  {
+    "q": "Qual è lo scopo dei permessi in Linux?",
+    "options": [
+      "Aumentare velocità CPU",
+      "Separare dati tra utenti e controllare accessi",
+      "Configurare cloud",
+      "Creare backup differenziali"
+    ],
+    "answer": 1,
+    "rationale": "I permessi Linux garantiscono che utenti diversi non accedano ai file privati altrui."
+  },
+  {
+    "q": "Quale comando Linux modifica i permessi di un file?",
+    "options": [
+      "chmod",
+      "raidctl",
+      "backupd",
+      "xorcmd"
+    ],
+    "answer": 0,
+    "rationale": "Il comando chmod viene utilizzato per modificare i permessi dei file."
+  },
+  {
+    "q": "Quale modello di controllo accessi assegna permessi ai ruoli anziché agli utenti?",
+    "options": [
+      "DAC",
+      "MAC",
+      "RBAC",
+      "RAID"
+    ],
+    "answer": 2,
+    "rationale": "RBAC assegna i permessi ai ruoli, che poi vengono assegnati agli utenti."
+  },
+  {
+    "q": "Nel modello MAC, chi determina l'accesso alle risorse?",
+    "options": [
+      "L'utente proprietario",
+      "Il sistema centrale con etichette di sicurezza",
+      "Il database",
+      "Il NAS"
+    ],
+    "answer": 1,
+    "rationale": "Nel MAC il sistema impone politiche basate su etichette di sicurezza."
+  },
+  {
+    "q": "Cos'è il GDPR?",
+    "options": [
+      "Un protocollo di rete",
+      "Un regolamento europeo sulla protezione dei dati personali",
+      "Un sistema RAID",
+      "Un antivirus"
+    ],
+    "answer": 1,
+    "rationale": "Il GDPR è un regolamento UE per la protezione dei dati personali."
+  },
+  {
+    "q": "Qual è uno dei diritti previsti dal GDPR?",
+    "options": [
+      "Accesso ai dati personali",
+      "Accesso root permanente",
+      "Backup automatico",
+      "Crittografia RAID"
+    ],
+    "answer": 0,
+    "rationale": "Il GDPR riconosce diritti come accesso, rettifica e cancellazione dei dati."
+  },
+  {
+    "q": "Chi è la 'Third Party' nel GDPR?",
+    "options": [
+      "L'interessato",
+      "Il titolare",
+      "Qualsiasi entità diversa da interessato, titolare o responsabile",
+      "Il RAID controller"
+    ],
+    "answer": 2,
+    "rationale": "La Third Party è un'entità diversa da interessato, titolare o responsabile del trattamento."
+  },
+  {
+    "q": "Perché il GDPR richiede misure di sicurezza adeguate?",
+    "options": [
+      "Per aumentare prestazioni",
+      "Per proteggere i diritti degli interessati",
+      "Per ridurre spazio disco",
+      "Per configurare XOR"
+    ],
+    "answer": 1,
+    "rationale": "Il GDPR mira a proteggere i diritti delle persone i cui dati vengono trattati."
+  },
+  {
+    "q": "Cosa implica la conformità al GDPR per un'organizzazione?",
+    "options": [
+      "Eliminare tutti i dati",
+      "Trattare dati personali in modo lecito e sicuro",
+      "Usare solo RAID 1",
+      "Disabilitare IAM"
+    ],
+    "answer": 1,
+    "rationale": "La conformità implica trattamento lecito, sicuro e conforme alle normative."
+  },
+  {
+    "q": "Cos'è un backup?",
+    "options": [
+      "Una copia dei dati importanti su altro hardware",
+      "Un tipo di RAID",
+      "Un firewall",
+      "Un modello RBAC"
+    ],
+    "answer": 0,
+    "rationale": "Il backup è una copia dei dati conservata in luogo sicuro per prevenire perdite."
+  },
+  {
+    "q": "Qual è la regola 3-2-1 nel backup?",
+    "options": [
+      "3 dischi RAID",
+      "3 copie dati, 2 tipi storage, 1 copia offsite",
+      "3 password, 2 utenti, 1 admin",
+      "3 server cloud"
+    ],
+    "answer": 1,
+    "rationale": "La regola 3-2-1 prevede tre copie, due tipi di storage e una copia offsite."
+  },
+  {
+    "q": "Qual è un vantaggio del backup differenziale?",
+    "options": [
+      "Richiede solo l'ultimo completo e l'ultimo differenziale per il ripristino",
+      "Non occupa spazio",
+      "Non necessita pianificazione",
+      "È più veloce del RAID 0"
+    ],
+    "answer": 0,
+    "rationale": "Il backup differenziale semplifica il ripristino rispetto all'incrementale."
+  },
+  {
+    "q": "Perché è rischioso avere solo backup locali?",
+    "options": [
+      "Riduce prestazioni",
+      "Non protegge da disastri fisici nello stesso luogo",
+      "Aumenta velocità",
+      "Riduce sicurezza RAID"
+    ],
+    "answer": 1,
+    "rationale": "Un disastro fisico può distruggere sia dati originali sia backup se nello stesso luogo."
+  },
+  {
+    "q": "Qual è una fase chiave nel processo di backup?",
+    "options": [
+      "Identificazione dei dati critici",
+      "Configurazione XOR",
+      "Installazione MAC",
+      "Creazione UID"
+    ],
+    "answer": 0,
+    "rationale": "Il backup inizia identificando i dati critici da proteggere."
+  },
+  {
+    "q": "Cosa significa RAID?",
+    "options": [
+      "Rapid Access Integrated Data",
+      "Redundant Array of Independent Disks",
+      "Remote Access Integrated Device",
+      "Role Access Internal Disk"
+    ],
+    "answer": 1,
+    "rationale": "RAID è l'acronimo di Redundant Array of Independent Disks."
+  },
+  {
+    "q": "Quale livello RAID non offre ridondanza?",
+    "options": [
+      "RAID 1",
+      "RAID 5",
+      "RAID 0",
+      "RAID 6"
+    ],
+    "answer": 2,
+    "rationale": "RAID 0 non prevede ridondanza, quindi un guasto comporta perdita dati."
+  },
+  {
+    "q": "Quale RAID tollera il guasto di un singolo disco usando parità?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "answer": 2,
+    "rationale": "RAID 5 utilizza parità distribuita e tollera il guasto di un disco."
+  },
+  {
+    "q": "Quale RAID tollera il guasto di due dischi?",
+    "options": [
+      "RAID 1",
+      "RAID 5",
+      "RAID 6",
+      "RAID 0"
+    ],
+    "answer": 2,
+    "rationale": "RAID 6 utilizza doppia parità e tollera il guasto di due dischi."
+  },
+  {
+    "q": "Qual è uno svantaggio del RAID 10?",
+    "options": [
+      "Nessuna ridondanza",
+      "Costo elevato per numero di dischi richiesti",
+      "Basse prestazioni",
+      "Richiede solo un disco"
+    ],
+    "answer": 1,
+    "rationale": "RAID 10 combina prestazioni e ridondanza ma ha costo elevato perché richiede più dischi."
+  }
+]

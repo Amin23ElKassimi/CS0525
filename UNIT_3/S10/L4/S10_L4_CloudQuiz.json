@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Qual è la definizione corretta di Cloud Computing secondo il documento?",
+    "options": [
+      "L'acquisto di server fisici per la gestione locale dei dati.",
+      "L'erogazione di servizi di calcolo come server e storage tramite Internet.",
+      "Un sistema di backup offline per i dati aziendali.",
+      "L'installazione di software esclusivamente su macchine locali."
+    ],
+    "answer": 1,
+    "rationale": "Il cloud computing permette l'accesso a risorse tecnologiche (server, storage, database) via Internet senza gestire fisicamente l'hardware."
+  },
+  {
+    "q": "Quale tra i seguenti è un esempio di modello SaaS (Software as a Service)?",
+    "options": [
+      "Amazon EC2",
+      "Microsoft Azure",
+      "Google Workspace",
+      "Google App Engine"
+    ],
+    "answer": 2,
+    "rationale": "SaaS fornisce applicazioni software direttamente tramite browser; Google Workspace è un esempio citato nel documento."
+  },
+  {
+    "q": "Cosa fornisce il modello IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Solo il software applicativo.",
+      "Una piattaforma per lo sviluppo di codice.",
+      "L'infrastruttura fondamentale come server, storage e rete.",
+      "Esclusivamente la gestione dei database."
+    ],
+    "answer": 2,
+    "rationale": "IaaS offre le componenti hardware virtualizzate come server e storage su cui l'utente può installare sistemi operativi e app."
+  },
+  {
+    "q": "Qual è il vantaggio principale del modello Cloud PaaS?",
+    "options": [
+      "Permette agli sviluppatori di concentrarsi sul codice senza gestire l'infrastruttura.",
+      "È il modello più economico per l'archiviazione semplice di file.",
+      "Fornisce l'accesso diretto ai componenti hardware fisici del data center.",
+      "Non richiede alcuna connessione internet per funzionare."
+    ],
+    "answer": 0,
+    "rationale": "PaaS offre una piattaforma che automatizza la gestione del sistema operativo e dell'infrastruttura, agevolando lo sviluppo software."
+  },
+  {
+    "q": "In un modello di Responsabilità Condivisa, chi è solitamente responsabile della sicurezza 'nel' cloud (dati e configurazioni)?",
+    "options": [
+      "Il Cloud Service Provider (CSP).",
+      "Il cliente/utente finale.",
+      "Il fornitore di servizi internet (ISP).",
+      "Nessuno, il cloud è intrinsecamente sicuro."
+    ],
+    "answer": 1,
+    "rationale": "Mentre il provider protegge l'infrastruttura fisica, l'utente è responsabile della protezione dei propri dati e delle configurazioni applicative."
+  },
+  {
+    "q": "Qual è la formula utilizzata per calcolare il Rischio informatico?",
+    "options": [
+      "Rischio = Minaccia + Vulnerabilità",
+      "Rischio = Probabilità x Impatto (Danno)",
+      "Rischio = Numero di Asset / Costo delle patch",
+      "Rischio = Frequenza di attacco - Difese attive"
+    ],
+    "answer": 1,
+    "rationale": "Il rischio è determinato dalla probabilità che una minaccia sfrutti una vulnerabilità moltiplicata per l'entità del danno causato."
+  },
+  {
+    "q": "Cosa si intende per 'Mitigation' (Mitigazione) di una vulnerabilità?",
+    "options": [
+      "L'eliminazione totale della causa del problema.",
+      "La riduzione della probabilità o dell'impatto di un rischio.",
+      "L'ignorare il rischio perché troppo costoso da gestire.",
+      "Il trasferimento del rischio a una compagnia assicurativa."
+    ],
+    "answer": 1,
+    "rationale": "La mitigazione implementa controlli per rendere il rischio accettabile, senza necessariamente rimuovere la vulnerabilità alla radice."
+  },
+  {
+    "q": "Qual è la differenza principale tra Mitigation e Remediation?",
+    "options": [
+      "La Remediation è temporanea, la Mitigation è definitiva.",
+      "La Mitigation riduce l'impatto, la Remediation corregge definitivamente la falla.",
+      "Non c'è differenza, sono sinonimi.",
+      "La Mitigation si applica solo all'hardware, la Remediation solo al software."
+    ],
+    "answer": 1,
+    "rationale": "Remediation significa risolvere il problema (es. applicare una patch), mentre Mitigation significa limitare i danni (es. chiudere una porta sul firewall)."
+  },
+  {
+    "q": "Quale strumento è fondamentale per mitigare gli attacchi alle Web Application?",
+    "options": [
+      "Un antivirus tradizionale.",
+      "Un WAF (Web Application Firewall).",
+      "Un cavo di rete schermato.",
+      "Un disco rigido SSD."
+    ],
+    "answer": 1,
+    "rationale": "Il WAF analizza il traffico HTTP/S specifico per le applicazioni web per bloccare attacchi come SQLi e XSS."
+  },
+  {
+    "q": "Qual è la tecnica più efficace per prevenire l'attacco SQL Injection?",
+    "options": [
+      "Aumentare la ram del server.",
+      "Utilizzare la sanitizzazione degli input e query parametrizzate.",
+      "Nascondere l'indirizzo IP del server.",
+      "Cambiare frequentemente la password del database."
+    ],
+    "answer": 1,
+    "rationale": "Validare e pulire i dati inseriti dagli utenti impedisce l'esecuzione di comandi malevoli nel database."
+  },
+  {
+    "q": "Qual è l'obiettivo principale di un attacco DoS (Denial of Service)?",
+    "options": [
+      "Rubare le password degli utenti.",
+      "Rendere un servizio o un sistema indisponibile agli utenti legittimi.",
+      "Crittografare i file per chiedere un riscatto.",
+      "Modificare il contenuto del sito web."
+    ],
+    "answer": 1,
+    "rationale": "L'attacco DoS mira a saturare le risorse di un sistema per bloccarne il funzionamento."
+  },
+  {
+    "q": "Quale soluzione permette di gestire picchi di traffico e mitigare attacchi DDoS?",
+    "options": [
+      "L'uso di un Load Balancer (Bilanciatore di carico).",
+      "L'installazione di un software di editing video.",
+      "La disattivazione del protocollo HTTPS.",
+      "L'utilizzo di tastiere meccaniche."
+    ],
+    "answer": 0,
+    "rationale": "Il Load Balancing distribuisce il traffico su più server, evitando che un singolo nodo venga sopraffatto."
+  },
+  {
+    "q": "Cosa si intende per 'Exploit' in ambito cybersecurity?",
+    "options": [
+      "Un manuale utente per un software.",
+      "Un codice o una tecnica che sfrutta una vulnerabilità specifica per ottenere accesso o eseguire azioni non autorizzate.",
+      "Un metodo di backup rapido.",
+      "La vendita legale di licenze software."
+    ],
+    "answer": 1,
+    "rationale": "Un exploit è lo strumento (software o sequenza di dati) usato per approfittare di un bug o difetto di sicurezza."
+  },
+  {
+    "q": "Qual è la difesa più efficace contro gli Exploit che sfruttano vulnerabilità note?",
+    "options": [
+      "Spegnere il server durante la notte.",
+      "L'applicazione costante di patch e aggiornamenti di sicurezza.",
+      "L'utilizzo di monitor più grandi.",
+      "La cancellazione della cronologia del browser."
+    ],
+    "answer": 1,
+    "rationale": "Mantenere il software aggiornato corregge le falle prima che gli attaccanti possano sfruttarle."
+  },
+  {
+    "q": "In cosa consiste un attacco Man-In-The-Middle (MITM)?",
+    "options": [
+      "Un utente che dimentica la propria password.",
+      "Un attaccante che si interpone tra due parti che comunicano per intercettare o alterare i dati.",
+      "Un virus che cancella i file dal desktop.",
+      "Un attacco fisico al data center."
+    ],
+    "answer": 1,
+    "rationale": "L'attaccante si posiziona 'nel mezzo' della comunicazione, spesso senza che le vittime se ne accorgano."
+  },
+  {
+    "q": "Quale tecnologia protegge i dati in transito dagli attacchi MITM?",
+    "options": [
+      "La crittografia TLS/SSL.",
+      "La compressione dei file .zip.",
+      "La deframmentazione del disco.",
+      "L'uso di cavi in fibra ottica."
+    ],
+    "answer": 0,
+    "rationale": "Il protocollo TLS cripta la comunicazione, rendendo i dati illeggibili all'attaccante anche se intercettati."
+  },
+  {
+    "q": "Secondo le buone pratiche, qual è la lunghezza minima consigliata per una password sicura?",
+    "options": [
+      "6 caratteri.",
+      "8 caratteri.",
+      "12 caratteri.",
+      "4 numeri."
+    ],
+    "answer": 2,
+    "rationale": "Il documento suggerisce password di almeno 12 caratteri con mix di simboli, numeri e lettere."
+  },
+  {
+    "q": "Cos'è l'Autenticazione a Due Fattori (2FA)?",
+    "options": [
+      "L'uso di due password diverse scelte dall'utente.",
+      "Un metodo che richiede due prove di identità diverse (es. password + codice su smartphone).",
+      "L'accesso effettuato da due computer diversi contemporaneamente.",
+      "La condivisione della password con un collega di fiducia."
+    ],
+    "answer": 1,
+    "rationale": "La 2FA aggiunge un livello di sicurezza: anche se la password viene rubata, l'attaccante non ha il secondo fattore."
+  },
+  {
+    "q": "Qual è il ruolo di un sistema IDS (Intrusion Detection System)?",
+    "options": [
+      "Bloccare automaticamente ogni connessione sospetta.",
+      "Monitorare il traffico di rete e segnalare attività sospette o violazioni delle policy.",
+      "Cifrare i file sensibili sul server.",
+      "Pulire i virus dal computer dell'utente."
+    ],
+    "answer": 1,
+    "rationale": "L'IDS funge da 'allarme', rilevando e segnalando intrusioni senza necessariamente bloccarle (compito dell'IPS)."
+  },
+  {
+    "q": "Cosa prevede l'Articolo 615-ter del Codice Penale italiano?",
+    "options": [
+      "La protezione del diritto d'autore.",
+      "Il reato di accesso abusivo a un sistema informatico o telematico.",
+      "La regolamentazione del commercio elettronico.",
+      "La tassazione dei servizi cloud."
+    ],
+    "answer": 1,
+    "rationale": "L'art. 615-ter punisce chi si introduce abusivamente in un sistema protetto da misure di sicurezza."
+  },
+  {
+    "q": "Nel contesto del Cloud, cosa significa 'Scalabilità'?",
+    "options": [
+      "La capacità di cambiare il colore dell'interfaccia software.",
+      "La capacità di aumentare o diminuire le risorse hardware in base alla domanda.",
+      "La velocità di caricamento delle pagine web.",
+      "La protezione fisica dei server contro le arrampicate."
+    ],
+    "answer": 1,
+    "rationale": "La scalabilità permette di adattare le risorse (CPU, RAM) in tempo reale per gestire carichi di lavoro variabili."
+  },
+  {
+    "q": "Perché l'uso di 'Honeypot' è utile nella sicurezza operativa?",
+    "options": [
+      "Per velocizzare il database.",
+      "Per attirare gli attaccanti in un ambiente controllato e studiarne il comportamento.",
+      "Per archiviare le password degli amministratori.",
+      "Per filtrare le email di spam."
+    ],
+    "answer": 1,
+    "rationale": "Un honeypot è un sistema 'esca' progettato per essere attaccato, permettendo di raccogliere informazioni sulle tecniche dei cybercriminali."
+  },
+  {
+    "q": "Cosa si intende per 'Hardening' di un sistema?",
+    "options": [
+      "Rendere il server fisicamente più resistente agli urti.",
+      "Il processo di messa in sicurezza di un sistema riducendo la sua superficie di attacco (es. disabilitando servizi inutili).",
+      "Aumentare il prezzo dei servizi cloud.",
+      "Sostituire i software open source con software a pagamento."
+    ],
+    "answer": 1,
+    "rationale": "L'hardening consiste nel configurare il sistema in modo da eliminare il maggior numero possibile di rischi di sicurezza."
+  },
+  {
+    "q": "Quale minaccia è associata alla mancata applicazione di una patch di sicurezza?",
+    "options": [
+      "Aumento dei costi di elettricità.",
+      "Sfruttamento di una vulnerabilità nota tramite un exploit.",
+      "Perdita della connessione Wi-Fi.",
+      "Surriscaldamento della CPU."
+    ],
+    "answer": 1,
+    "rationale": "Senza patch, le vulnerabilità rimangono aperte e pronte per essere colpite da exploit esistenti."
+  },
+  {
+    "q": "Quale tra queste è una policy di gestione password corretta?",
+    "options": [
+      "Utilizzare la stessa password per account personali e aziendali.",
+      "Imporre il blocco dell'account dopo un numero limitato di tentativi falliti.",
+      "Scrivere la password su un post-it sotto la tastiera.",
+      "Disabilitare l'autenticazione a due fattori per fare più velocemente."
+    ],
+    "answer": 1,
+    "rationale": "Il blocco dell'account previene attacchi di tipo brute force o a dizionario."
+  },
+  {
+    "q": "Cos'è un attacco DDoS rispetto a un DoS?",
+    "options": [
+      "Un attacco che proviene da un solo computer ma è più veloce.",
+      "Un attacco distribuito che sfrutta una rete di computer (botnet) per colpire il bersaglio.",
+      "Un attacco che mira solo ai database.",
+      "Un attacco che avviene solo tramite email."
+    ],
+    "answer": 1,
+    "rationale": "DDoS sta per Distributed Denial of Service, dove la forza dell'attacco deriva dalla molteplicità delle fonti."
+  },
+  {
+    "q": "Qual è il compito principale di un certificato digitale (PKI)?",
+    "options": [
+      "Velocizzare la connessione internet.",
+      "Garantire l'identità di un sito web e permettere la comunicazione cifrata.",
+      "Contare il numero di visitatori di un sito.",
+      "Bloccare i pop-up pubblicitari."
+    ],
+    "answer": 1,
+    "rationale": "I certificati validano che l'utente stia comunicando con il server reale e non con un impostore."
+  },
+  {
+    "q": "Cosa si intende per 'Shadow IT' nel contesto cloud?",
+    "options": [
+      "L'uso di server situati in zone buie del data center.",
+      "L'uso di applicazioni e servizi cloud da parte dei dipendenti senza l'autorizzazione del dipartimento IT.",
+      "Un sistema di backup che lavora in background.",
+      "La modalità notturna delle interfacce software."
+    ],
+    "answer": 1,
+    "rationale": "La Shadow IT rappresenta un rischio perché l'azienda non ha controllo sulla sicurezza dei dati gestiti in app non autorizzate."
+  },
+  {
+    "q": "L'Articolo 615-quinquies riguarda:",
+    "options": [
+      "La truffa online.",
+      "La diffusione di programmi diretti a danneggiare o interrompere un sistema informatico.",
+      "Il furto di cavi di rete.",
+      "La pubblicazione di foto private."
+    ],
+    "answer": 1,
+    "rationale": "Questo articolo punisce chi diffonde malware o programmi dannosi per sabotare sistemi altrui."
+  },
+  {
+    "q": "Quale di questi è un 'Asset' in un'analisi del rischio?",
+    "options": [
+      "Un virus trojan.",
+      "Il database dei clienti dell'azienda.",
+      "Un dipendente che commette un errore.",
+      "Un temporale che causa un blackout."
+    ],
+    "answer": 1,
+    "rationale": "L'Asset è tutto ciò che ha valore per l'organizzazione e deve essere protetto (dati, hardware, reputazione)."
+  }
+]
