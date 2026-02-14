@@ -1,0 +1,49 @@
+# 1. Variabili di Dominio
+$Domain = "HOGWARTS"
+$RootPath = "C:\Hogwarts_Data"
+
+# 2. Funzione Core per la sicurezza (Blindatura)
+function Set-HogwartsSecurity ($Path, $Identity, $Rights) {
+    try {
+        $Acl = Get-Acl $Path
+        # Disabilita ereditarietà ($true) e rimuove i permessi esistenti ($false)
+        $Acl.SetAccessRuleProtection($true, $false)
+        
+        # Regola per Amministratori (fondamentale per evitare il lockout)
+        $AdminRule = New-Object System.Security.AccessControl.FileSystemAccessRule("Administrators", "FullControl", "ContainerInherit, ObjectInherit", "None", "Allow")
+        $Acl.AddAccessRule($AdminRule)
+        
+        # Applicazione permesso specifico se fornito
+        if ($Identity -and $Rights) {
+            $Rule = New-Object System.Security.AccessControl.FileSystemAccessRule("$Domain\$Identity", $Rights, "ContainerInherit, ObjectInherit", "None", "Allow")
+            $Acl.AddAccessRule($Rule)
+        }
+        
+        Set-Acl $Path $Acl
+        Write-Host "[SUCCESS] $Identity -> $Path ($Rights)" -ForegroundColor Green
+    } catch {
+        Write-Host "[ERROR] Impossibile applicare permessi a $Path : $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+# 3. Esecuzione Configurazione (Matrice di Sicurezza)
+
+# Public Library: Tutti (Staff + Students) leggono
+Set-HogwartsSecurity "$RootPath\01_Public_Library" "Hogwarts-Students" "ReadAndExecute"
+$Acl = Get-Acl "$RootPath\01_Public_Library"
+$StaffRule = New-Object System.Security.AccessControl.FileSystemAccessRule("$Domain\Hogwarts-Staff", "ReadAndExecute", "ContainerInherit, ObjectInherit", "None", "Allow")
+$Acl.AddAccessRule($StaffRule)
+Set-Acl "$RootPath\01_Public_Library" $Acl
+
+# Common Rooms: Accesso per Casa
+Set-HogwartsSecurity "$RootPath\02_Common_Rooms\Gryffindor" "House-Gryffindor" "Modify"
+Set-HogwartsSecurity "$RootPath\02_Common_Rooms\Slytherin" "House-Slytherin" "Modify"
+
+# Staff Sanctum: Staff legge tutto, ma Results solo Teachers
+Set-HogwartsSecurity "$RootPath\03_Staff_Sanctum" "Hogwarts-Staff" "ReadAndExecute"
+Set-HogwartsSecurity "$RootPath\03_Staff_Sanctum\Results" "Staff-Teachers" "Modify"
+
+# Vault: Solo Albus
+Set-HogwartsSecurity "$RootPath\04_Headmaster_Vault" "albus.dumbledore" "FullControl"
+
+Write-Host "`nACL applicate correttamente. Laboratorio pronto per il test." -ForegroundColor Yellow

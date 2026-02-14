@@ -1,0 +1,25 @@
+# 1. Definizione Percorso Root
+$RootPath = "C:\Hogwarts_Data"
+
+# 2. Elenco cartelle da creare
+$Folders = @(
+    "$RootPath",
+    "$RootPath\01_Public_Library",
+    "$RootPath\02_Common_Rooms",
+    "$RootPath\02_Common_Rooms\Gryffindor",
+    "$RootPath\02_Common_Rooms\Slytherin",
+    "$RootPath\03_Staff_Sanctum",
+    "$RootPath\03_Staff_Sanctum\Results",
+    "$RootPath\04_Headmaster_Vault"
+)
+
+# 3. Ciclo di creazione
+foreach ($Folder in $Folders) {
+    if (!(Test-Path $Folder)) {
+        New-Item -ItemType Directory -Path $Folder | Out-Null
+        Write-Host "[OK] Creata cartella: $Folder" -ForegroundColor Cyan
+    } else {
+        Write-Host "[!] Cartella già esistente: $Folder" -ForegroundColor Yellow
+    }
+}
+Write-Host "`nFileSystem pronto per la configurazione dei permessi." -ForegroundColor Green
